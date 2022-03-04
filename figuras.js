@@ -90,3 +90,4 @@ function calcularAreaCuadrado(){
     const area = value ** 2;
     alert(area);
 }
+

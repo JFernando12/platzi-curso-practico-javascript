@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangulo Isosceles</title>
+</head>
+<body>
+    <script src="./trianguloIsosceles.js"></script>
+    <header>
+        <h1>Esta página calcula la altura de un triangulo Isosceles</h1>
+    </header>
+    <main>
+        <form>
+            <label for="lado1">Lado 1:</label>
+            <input type="number" id="lado1">
+            
+            <label for="lado2">Lado 2:</label>
+            <input type="number" id="lado2">
+
+            <label for="lado3">Lado 3:</label>
+            <input type="number" id="lado3">
+
+            <button type="button" onclick="calculaAlturaTrianguloIsosceles()">Calcular</button>
+
+        </form>
+        <section>
+            <br><p id="resultado">Este es el resultado:</p>
+        </section>
+    </main>
+</body>
+</html>
