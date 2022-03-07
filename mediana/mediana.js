@@ -1,15 +1,13 @@
 numeros = [
+    5000,
     500,
     600,
     350,
     300,
-    1000,
     800,
     1600,
     1200
 ]
-
-console.log(numeros.length);
 
 function ordenarLista(lista){
     var guardar;
@@ -37,8 +35,9 @@ function esPar(lista){
 }
 
 function calcularMediana(lista){
+    resultado = document.getElementById("resultado");
+    array = document.getElementById("lista");
     lista  = ordenarLista(lista);
-    console.log(lista)
     var mediana;
     var mitad;
     var mitad1;
@@ -48,13 +47,16 @@ function calcularMediana(lista){
         mitad1 = lista[(lista.length/2) - 1];
         mitad2 = lista[lista.length/2];
         mediana = (mitad1 + mitad2) / 2;
-        console.log(mediana)
     }
     else{
         mitad = parseInt((lista.length/2));
         mediana = lista[mitad];
-        console.log(mediana);
     }
+
+    array.innerHTML = "La Lista es: " + lista;
+
+    resultado.innerHTML = "La mediana es: " + mediana;
+
 }
 
 calcularMediana(numeros)
